@@ -9,6 +9,7 @@ public class ListFiles {
     public static void main(String... args) {
         File[] files = new File("people/").listFiles();
         showFiles(files);
+        printSomeCoolStuff();
     }
 
     public static void showFiles(File[] files) {
@@ -20,6 +21,10 @@ public class ListFiles {
                 System.out.println("File: " + file.getName());
             }
         }
+    }
+
+    public static void printSomeCoolStuff() {
+      System.out.println("Some cool stuff!");
     }
      
 }
